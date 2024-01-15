@@ -1,6 +1,12 @@
 const express = require('express')
 const app = express()
 const dotenv=require('dotenv');
+const cors = require('cors');
+
+
+// Enable CORS for all routes
+app.use(cors());
+
 dotenv.config();
 const port = process.env.PORT
 const rundb=require('./db');
