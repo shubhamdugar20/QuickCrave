@@ -7,7 +7,7 @@ const rundb=require('./db');
 rundb();
 
 app.use((req,res,next)=>{
-  res.setHeader("Access-Control-Allow-Origin","http://localhost:3000");
+  res.setHeader("Access-Control-Allow-Origin","https://papaya-pavlova-e30c28.netlify.app");
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-Width, Content-Type, Accept" 
