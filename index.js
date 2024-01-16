@@ -12,7 +12,7 @@ const port = process.env.PORT
 const rundb=require('./db');
 rundb();
 
-app.use((req,res,next)=>{
+/*app.use((req,res,next)=>{
   res.setHeader("Access-Control-Allow-Origin","https://65a61a8c78ba5f79b7cf3e68--courageous-cactus-037143.netlify.app");
   res.header(
     "Access-Control-Allow-Headers",
@@ -21,7 +21,7 @@ app.use((req,res,next)=>{
 
   );
   next();
-})
+})*/
 app.get('/', (req, res) => {
   res.send('Hello World  i am here!')
 })
